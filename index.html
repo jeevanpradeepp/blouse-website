@@ -1,0 +1,3129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blouse Studio | Premium Blouse Designs & Stitching</title>
+
+<meta
+    name="description"
+    content="Explore premium bridal, wedding, designer, maggam and embroidery blouse designs with custom stitching."
+>
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #f8f5f0;
+    color: #29251f;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #e8e0d5;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 72px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #a46c45;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #302b26;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #a46c45;
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: none;
+
+    font-size: 26px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(32,27,23,0.45),
+            rgba(32,27,23,0.45)
+        ),
+        url("images/BD001-front.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+
+    color: white;
+}
+
+.hero-content h1 {
+    max-width: 700px;
+
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    max-width: 620px;
+
+    font-size: 19px;
+
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+
+    padding: 14px 24px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.25s;
+}
+
+.btn-primary {
+    background: #b9784f;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #945a36;
+    transform: translateY(-2px);
+}
+
+.btn-light {
+    background: white;
+    color: #332b25;
+}
+
+.btn-light:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+.section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 5vw, 44px);
+
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #746b63;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   CATEGORY CARDS
+========================================================= */
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.category-card {
+    position: relative;
+
+    height: 260px;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.08);
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s;
+}
+
+.category-card:hover img {
+    transform: scale(1.07);
+}
+
+.category-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding: 25px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            transparent 25%,
+            rgba(0,0,0,0.78)
+        );
+}
+
+.category-overlay h3 {
+    font-size: 24px;
+}
+
+.category-overlay p {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.catalogue-toolbar {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+}
+
+.search-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.search-box input {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ddd2c7;
+
+    border-radius: 9px;
+
+    background: white;
+
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #a46c45;
+}
+
+.filter-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    border: 1px solid #ddd2c7;
+
+    background: white;
+
+    color: #554b43;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #302820;
+    color: white;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid #eee4da;
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.09);
+}
+
+.product-image {
+    position: relative;
+
+    height: 380px;
+
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.product-badge {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    background: white;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-category {
+    color: #a46c45;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.product-info h3 {
+    font-size: 21px;
+
+    margin: 5px 0;
+}
+
+.product-description {
+    color: #756d65;
+
+    font-size: 14px;
+
+    min-height: 45px;
+
+    margin-bottom: 15px;
+}
+
+.product-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.price {
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+.view-btn {
+    border: none;
+
+    background: #302820;
+
+    color: white;
+
+    border-radius: 7px;
+
+    padding: 10px 14px;
+
+    font-weight: 700;
+}
+
+.view-btn:hover {
+    background: #a46c45;
+}
+
+
+/* =========================================================
+   CUSTOM STITCHING
+========================================================= */
+
+.custom-section {
+    background: #302820;
+
+    color: white;
+}
+
+.custom-content {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 85px 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.custom-content h2 {
+    font-size: clamp(34px, 5vw, 50px);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.custom-content p {
+    color: #d7cdc3;
+
+    margin-bottom: 25px;
+}
+
+.custom-list {
+    list-style: none;
+
+    margin-bottom: 30px;
+}
+
+.custom-list li {
+    margin-bottom: 12px;
+}
+
+.custom-list li::before {
+    content: "✓";
+
+    margin-right: 10px;
+
+    color: #d69c72;
+
+    font-weight: 800;
+}
+
+.custom-image {
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+.custom-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-card {
+    background: white;
+
+    border: 1px solid #eee4da;
+
+    border-radius: 18px;
+
+    padding: 45px;
+
+    text-align: center;
+}
+
+.contact-card h2 {
+    font-size: 34px;
+
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #716960;
+
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: #211c18;
+
+    color: white;
+
+    padding: 45px 20px;
+
+    text-align: center;
+}
+
+.footer p {
+    color: #bdb3aa;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(20,16,13,0.8);
+
+    z-index: 2000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+
+    width: min(1100px, 100%);
+
+    max-height: 94vh;
+
+    overflow: auto;
+
+    border-radius: 18px;
+
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.65);
+
+    color: white;
+
+    font-size: 25px;
+
+    z-index: 20;
+}
+
+.modal-body {
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    gap: 30px;
+
+    padding: 30px;
+}
+
+
+/* =========================================================
+   PRODUCT GALLERY
+========================================================= */
+
+.gallery {
+    min-width: 0;
+}
+
+.main-image-container {
+    position: relative;
+
+    height: 600px;
+
+    background: #f4f0eb;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    touch-action: pan-y;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.15s ease;
+
+    user-select: none;
+
+    -webkit-user-drag: none;
+}
+
+.main-image-container.zooming {
+    cursor: zoom-in;
+}
+
+.gallery-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.9);
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+
+    z-index: 5;
+
+    font-size: 22px;
+}
+
+.gallery-prev {
+    left: 12px;
+}
+
+.gallery-next {
+    right: 12px;
+}
+
+.thumbnails {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+
+    margin-top: 12px;
+}
+
+.thumbnail {
+    height: 100px;
+
+    border: 2px solid transparent;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    background: #f5f0ea;
+}
+
+.thumbnail.active {
+    border-color: #a46c45;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS MODAL
+========================================================= */
+
+.modal-details {
+    padding: 20px 10px;
+}
+
+.modal-details .product-category {
+    margin-bottom: 7px;
+}
+
+.modal-details h2 {
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    margin-bottom: 12px;
+}
+
+.modal-price {
+    font-size: 28px;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.modal-description {
+    color: #6f675f;
+
+    margin-bottom: 25px;
+}
+
+.design-info {
+    border-top: 1px solid #e8dfd5;
+    border-bottom: 1px solid #e8dfd5;
+
+    padding: 17px 0;
+
+    margin-bottom: 25px;
+}
+
+.design-info div {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 5px 0;
+
+    font-size: 14px;
+}
+
+.design-info span:first-child {
+    color: #776d64;
+}
+
+.whatsapp-btn {
+    width: 100%;
+
+    border: none;
+
+    background: #25D366;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 9px;
+
+    font-weight: 800;
+
+    font-size: 16px;
+}
+
+.whatsapp-btn:hover {
+    filter: brightness(0.92);
+}
+
+.zoom-note {
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    color: #82786f;
+}
+
+
+/* =========================================================
+   FULLSCREEN VIEWER
+========================================================= */
+
+.fullscreen-viewer {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.96);
+
+    z-index: 5000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreen-viewer.show {
+    display: flex;
+}
+
+.fullscreen-image {
+    max-width: 92vw;
+    max-height: 88vh;
+
+    object-fit: contain;
+
+    user-select: none;
+}
+
+.fullscreen-close {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    border: none;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    z-index: 10;
+}
+
+.fullscreen-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    font-size: 30px;
+}
+
+.fullscreen-prev {
+    left: 20px;
+}
+
+.fullscreen-next {
+    right: 20px;
+}
+
+.image-counter {
+    position: absolute;
+
+    bottom: 20px;
+
+    color: white;
+
+    background: rgba(0,0,0,0.5);
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   NO RESULTS
+========================================================= */
+
+.no-results {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 50px;
+
+    color: #756d65;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .category-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .modal-body {
+        grid-template-columns: 1fr;
+    }
+
+    .main-image-container {
+        height: 520px;
+    }
+
+    .custom-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        min-height: 62px;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 62px;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        border-bottom: 1px solid #eee4da;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero-content {
+        padding: 50px 20px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .category-card {
+        height: 200px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 430px;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+
+    .modal {
+        padding: 0;
+    }
+
+    .modal-content {
+        border-radius: 0;
+
+        max-height: 100vh;
+
+        height: 100vh;
+    }
+
+    .modal-body {
+        padding: 55px 15px 20px;
+    }
+
+    .main-image-container {
+        height: 420px;
+    }
+
+    .thumbnail {
+        height: 75px;
+    }
+
+    .modal-details h2 {
+        font-size: 28px;
+    }
+
+    .custom-content {
+        padding: 60px 20px;
+    }
+
+    .custom-image img {
+        height: 380px;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+====================================================== -->
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Blouse<span>Studio</span>
+        </div>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#categories">Categories</a>
+            </li>
+
+            <li>
+                <a href="#designs">Designs</a>
+            </li>
+
+            <li>
+                <a href="#custom">Custom Stitching</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Blouses Designed
+            To Be Remembered.
+        </h1>
+
+        <p>
+            Discover premium bridal, wedding, designer,
+            maggam and embroidery blouse designs with
+            custom stitching.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#designs"
+                class="btn btn-primary"
+            >
+                Explore Designs
+            </a>
+
+            <a
+                href="#custom"
+                class="btn btn-light"
+            >
+                Custom Stitching
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CATEGORIES
+====================================================== -->
+
+<section class="section" id="categories">
+
+    <div class="section-heading">
+
+        <h2>Explore Collections</h2>
+
+        <p>
+            Find the perfect blouse style for your
+            wedding, celebration or special occasion.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+
+        <div
+            class="category-card"
+            onclick="filterCategory('Bridal')"
+        >
+
+            <img
+                src="images/BD001-front.jpg"
+                alt="Bridal blouse designs"
+            >
+
+            <div class="category-overlay">
+
+                <h3>Bridal</h3>
+
+                <p>
+                    Elegant designs for your big day
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="category-card"
+            onclick="filterCategory('Wedding')"
+        >
+
+            <img
+                src="images/WD001-front.jpg"
+                alt="Wedding blouse designs"
+            >
+
+            <div class="category-overlay">
+
+                <h3>Wedding</h3>
+
+                <p>
+                    Traditional and sophisticated
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="category-card"
+            onclick="filterCategory('Designer')"
+        >
+
+            <img
+                src="images/DS001-front.jpg"
+                alt="Designer blouse designs"
+            >
+
+            <div class="category-overlay">
+
+                <h3>Designer</h3>
+
+                <p>
+                    Modern statement designs
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="category-card"
+            onclick="filterCategory('Maggam')"
+        >
+
+            <img
+                src="images/MG001-front.jpg"
+                alt="Maggam blouse designs"
+            >
+
+            <div class="category-overlay">
+
+                <h3>Maggam</h3>
+
+                <p>
+                    Detailed handcrafted work
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PRODUCTS
+====================================================== -->
+
+<section class="section" id="designs">
+
+    <div class="section-heading">
+
+        <h2>Our Designs</h2>
+
+        <p>
+            Browse our latest blouse designs and
+            discover the details from every angle.
+        </p>
+
+    </div>
+
+
+    <div class="catalogue-toolbar">
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search blouse designs..."
+            >
+
+        </div>
+
+
+        <div class="filter-buttons">
+
+            <button
+                class="filter-btn active"
+                onclick="filterCategory('All', this)"
+            >
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterCategory('Bridal', this)"
+            >
+                Bridal
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterCategory('Wedding', this)"
+            >
+                Wedding
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterCategory('Designer', this)"
+            >
+                Designer
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterCategory('Maggam', this)"
+            >
+                Maggam
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterCategory('Embroidery', this)"
+            >
+                Embroidery
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="product-grid"
+        id="productGrid"
+    ></div>
+
+</section>
+
+
+<!-- =====================================================
+     CUSTOM STITCHING
+====================================================== -->
+
+<section
+    class="custom-section"
+    id="custom"
+>
+
+    <div class="custom-content">
+
+
+        <div>
+
+            <h2>
+                Your Design.
+                Your Fit.
+                Your Blouse.
+            </h2>
+
+            <p>
+                Have a design in mind?
+                Share your inspiration with us and
+                discuss your preferred fabric, work,
+                fitting and finishing.
+            </p>
+
+
+            <ul class="custom-list">
+
+                <li>
+                    Custom measurements
+                </li>
+
+                <li>
+                    Design consultation
+                </li>
+
+                <li>
+                    Bridal and occasion stitching
+                </li>
+
+                <li>
+                    Premium finishing
+                </li>
+
+            </ul>
+
+
+            <a
+                class="btn btn-primary"
+                href="#contact"
+            >
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="custom-image">
+
+            <img
+                src="images/MG001-front.jpg"
+                alt="Custom blouse stitching"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+====================================================== -->
+
+<section
+    class="section"
+    id="contact"
+>
+
+    <div class="contact-card">
+
+        <h2>
+            Let's Create Your Blouse
+        </h2>
+
+        <p>
+            For design enquiries, custom stitching,
+            measurements and orders, contact us
+            directly through WhatsApp.
+        </p>
+
+
+        <button
+            class="btn btn-primary"
+            onclick="openWhatsApp()"
+        >
+            Chat on WhatsApp
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+    <div class="logo">
+        Blouse<span>Studio</span>
+    </div>
+
+    <p>
+        Premium blouse designs & custom stitching.
+    </p>
+
+    <p>
+        © <span id="year"></span>
+        Blouse Studio. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     PRODUCT MODAL
+====================================================== -->
+
+<div
+    class="modal"
+    id="productModal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeProduct()"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-body">
+
+
+            <!-- GALLERY -->
+
+            <div class="gallery">
+
+                <div
+                    class="main-image-container zooming"
+                    id="mainImageContainer"
+                >
+
+                    <img
+                        id="mainImage"
+                        class="main-image"
+                        src=""
+                        alt=""
+                    >
+
+
+                    <button
+                        class="gallery-arrow gallery-prev"
+                        onclick="previousImage(event)"
+                    >
+                        ‹
+                    </button>
+
+
+                    <button
+                        class="gallery-arrow gallery-next"
+                        onclick="nextImage(event)"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="thumbnails"
+                    id="thumbnails"
+                ></div>
+
+            </div>
+
+
+            <!-- DETAILS -->
+
+            <div class="modal-details">
+
+                <div
+                    class="product-category"
+                    id="modalCategory"
+                ></div>
+
+
+                <h2 id="modalName"></h2>
+
+
+                <div
+                    class="modal-price"
+                    id="modalPrice"
+                ></div>
+
+
+                <p
+                    class="modal-description"
+                    id="modalDescription"
+                ></p>
+
+
+                <div class="design-info">
+
+                    <div>
+
+                        <span>
+                            Design ID
+                        </span>
+
+                        <strong
+                            id="modalId"
+                        ></strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Category
+                        </span>
+
+                        <strong
+                            id="modalCategoryInfo"
+                        ></strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="whatsapp-btn"
+                    id="modalWhatsApp"
+                >
+                    Order / Enquire on WhatsApp
+                </button>
+
+
+                <p class="zoom-note">
+
+                    Desktop:
+                    move your mouse over the image
+                    to zoom.
+
+                    <br>
+
+                    Mobile:
+                    pinch the image or open fullscreen.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FULLSCREEN IMAGE VIEWER
+====================================================== -->
+
+<div
+    class="fullscreen-viewer"
+    id="fullscreenViewer"
+>
+
+    <button
+        class="fullscreen-close"
+        onclick="closeFullscreen()"
+    >
+        ×
+    </button>
+
+
+    <button
+        class="fullscreen-arrow fullscreen-prev"
+        onclick="fullscreenPrevious()"
+    >
+        ‹
+    </button>
+
+
+    <img
+        id="fullscreenImage"
+        class="fullscreen-image"
+        src=""
+        alt=""
+    >
+
+
+    <button
+        class="fullscreen-arrow fullscreen-next"
+        onclick="fullscreenNext()"
+    >
+        ›
+    </button>
+
+
+    <div
+        class="image-counter"
+        id="imageCounter"
+    ></div>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   CONFIGURATION
+========================================================= */
+
+/*
+   Replace this with your real WhatsApp number.
+
+   India example:
+
+   919876543210
+
+   Do NOT use:
+   +91
+   spaces
+   hyphens
+*/
+
+const WHATSAPP_NUMBER = "919999999999";
+
+
+/* =========================================================
+   PRODUCT DATA
+========================================================= */
+
+const products = [
+
+    {
+        id: "BD001",
+
+        name: "Royal Bridal Blouse",
+
+        category: "Bridal",
+
+        price: 2499,
+
+        images: [
+
+            "images/BD001-front.jpg",
+            "images/BD001-back.jpg",
+            "images/BD001-side.jpg",
+            "images/BD001-closeup.jpg"
+
+        ],
+
+        imageLabels: [
+
+            "Front",
+            "Back",
+            "Side",
+            "Close-up"
+
+        ],
+
+        description:
+            "Elegant bridal blouse with detailed embroidery and premium finishing."
+
+    },
+
+
+    {
+        id: "BD002",
+
+        name: "Bridal Maggam Design",
+
+        category: "Bridal",
+
+        price: 3499,
+
+        images: [
+
+            "images/BD002-front.jpg",
+            "images/BD002-back.jpg",
+            "images/BD002-side.jpg",
+            "images/BD002-closeup.jpg"
+
+        ],
+
+        imageLabels: [
+
+            "Front",
+            "Back",
+            "Side",
+            "Close-up"
+
+        ],
+
+        description:
+            "Rich bridal maggam design created for a sophisticated traditional look."
+
+    },
+
+
+    {
+        id: "WD001",
+
+        name: "Classic Wedding Blouse",
+
+        category: "Wedding",
+
+        price: 2999,
+
+        images: [
+
+            "images/WD001-front.jpg",
+            "images/WD001-back.jpg",
+            "images/WD001-side.jpg",
+            "images/WD001-closeup.jpg"
+
+        ],
+
+        imageLabels: [
+
+            "Front",
+            "Back",
+            "Side",
+            "Close-up"
+
+        ],
+
+        description:
+            "Classic wedding blouse combining traditional elegance with premium finishing."
+
+    },
+
+
+    {
+        id: "DS001",
+
+        name: "Modern Designer Blouse",
+
+        category: "Designer",
+
+        price: 2199,
+
+        images: [
+
+            "images/DS001-front.jpg",
+            "images/DS001-back.jpg",
+            "images/DS001-side.jpg",
+            "images/DS001-closeup.jpg"
+
+        ],
+
+        imageLabels: [
+
+            "Front",
+            "Back",
+            "Side",
+            "Close-up"
+
+        ],
+
+        description:
+            "Contemporary designer blouse for a modern and elegant appearance."
+
+    },
+
+
+    {
+        id: "MG001",
+
+        name: "Premium Maggam Work",
+
+        category: "Maggam",
+
+        price: 3299,
+
+        images: [
+
+            "images/MG001-front.jpg",
+            "images/MG001-back.jpg",
+            "images/MG001-side.jpg",
+            "images/MG001-closeup.jpg"
+
+        ],
+
+        imageLabels: [
+
+            "Front",
+            "Back",
+            "Side",
+            "Close-up"
+
+        ],
+
+        description:
+            "Intricate maggam work with detailed craftsmanship and premium finishing."
+
+    },
+
+
+    {
+        id: "EM001",
+
+        name: "Elegant Embroidery Blouse",
+
+        category: "Embroidery",
+
+        price: 1999,
+
+        images: [
+
+            "images/EM001-front.jpg",
+            "images/EM001-back.jpg",
+            "images/EM001-side.jpg",
+            "images/EM001-closeup.jpg"
+
+        ],
+
+        imageLabels: [
+
+            "Front",
+            "Back",
+            "Side",
+            "Close-up"
+
+        ],
+
+        description:
+            "Elegant embroidery blouse suitable for weddings and special occasions."
+
+    }
+
+];
+
+
+/* =========================================================
+   STATE
+========================================================= */
+
+let currentProducts = [...products];
+
+let currentProduct = null;
+
+let currentImageIndex = 0;
+
+let currentFilter = "All";
+
+
+/* =========================================================
+   DOM REFERENCES
+========================================================= */
+
+const productGrid =
+    document.getElementById("productGrid");
+
+const searchInput =
+    document.getElementById("searchInput");
+
+const productModal =
+    document.getElementById("productModal");
+
+const mainImage =
+    document.getElementById("mainImage");
+
+const mainImageContainer =
+    document.getElementById("mainImageContainer");
+
+const thumbnails =
+    document.getElementById("thumbnails");
+
+const modalName =
+    document.getElementById("modalName");
+
+const modalCategory =
+    document.getElementById("modalCategory");
+
+const modalCategoryInfo =
+    document.getElementById("modalCategoryInfo");
+
+const modalPrice =
+    document.getElementById("modalPrice");
+
+const modalDescription =
+    document.getElementById("modalDescription");
+
+const modalId =
+    document.getElementById("modalId");
+
+const modalWhatsApp =
+    document.getElementById("modalWhatsApp");
+
+const fullscreenViewer =
+    document.getElementById("fullscreenViewer");
+
+const fullscreenImage =
+    document.getElementById("fullscreenImage");
+
+const imageCounter =
+    document.getElementById("imageCounter");
+
+
+/* =========================================================
+   DISPLAY PRODUCTS
+========================================================= */
+
+function displayProducts(list) {
+
+    productGrid.innerHTML = "";
+
+
+    if (list.length === 0) {
+
+        productGrid.innerHTML = `
+
+            <div class="no-results">
+
+                <h3>
+                    No designs found
+                </h3>
+
+                <p>
+                    Try another search or category.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+    list.forEach(product => {
+
+        const card =
+            document.createElement("article");
+
+        card.className = "product-card";
+
+
+        card.innerHTML = `
+
+            <div class="product-image">
+
+                <img
+                    src="${product.images[0]}"
+                    alt="${product.name}"
+                    loading="lazy"
+                >
+
+                <div class="product-badge">
+                    ${product.category}
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div class="product-category">
+                    ${product.category}
+                </div>
+
+                <h3>
+                    ${product.name}
+                </h3>
+
+                <p class="product-description">
+                    ${product.description}
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <div class="price">
+                        ₹${product.price.toLocaleString("en-IN")}
+                    </div>
+
+                    <button
+                        class="view-btn"
+                        onclick="openProduct('${product.id}')"
+                    >
+                        View Design
+                    </button>
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        productGrid.appendChild(card);
+
+    });
+
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+function filterCategory(category, clickedButton = null) {
+
+    currentFilter = category;
+
+
+    document
+        .querySelectorAll(".filter-btn")
+        .forEach(button => {
+
+            button.classList.remove("active");
+
+        });
+
+
+    if (clickedButton) {
+
+        clickedButton.classList.add("active");
+
+    } else {
+
+        document
+            .querySelectorAll(".filter-btn")
+            .forEach(button => {
+
+                if (
+                    button.textContent.trim()
+                    === category
+                ) {
+
+                    button.classList.add("active");
+
+                }
+
+            });
+
+    }
+
+
+    applyFilters();
+
+
+    document
+        .getElementById("designs")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+/* =========================================================
+   SEARCH + FILTER
+========================================================= */
+
+function applyFilters() {
+
+    const search =
+        searchInput.value
+            .trim()
+            .toLowerCase();
+
+
+    currentProducts =
+        products.filter(product => {
+
+            const categoryMatch =
+                currentFilter === "All"
+                ||
+                product.category === currentFilter;
+
+
+            const searchMatch =
+                !search
+                ||
+                product.name
+                    .toLowerCase()
+                    .includes(search)
+                ||
+                product.category
+                    .toLowerCase()
+                    .includes(search)
+                ||
+                product.description
+                    .toLowerCase()
+                    .includes(search);
+
+
+            return categoryMatch && searchMatch;
+
+        });
+
+
+    displayProducts(currentProducts);
+
+}
+
+
+/* =========================================================
+   SEARCH EVENT
+========================================================= */
+
+searchInput.addEventListener(
+    "input",
+    applyFilters
+);
+
+
+/* =========================================================
+   OPEN PRODUCT
+========================================================= */
+
+function openProduct(productId) {
+
+    currentProduct =
+        products.find(
+            product =>
+                product.id === productId
+        );
+
+
+    if (!currentProduct) {
+        return;
+    }
+
+
+    currentImageIndex = 0;
+
+
+    modalName.textContent =
+        currentProduct.name;
+
+
+    modalCategory.textContent =
+        currentProduct.category;
+
+
+    modalCategoryInfo.textContent =
+        currentProduct.category;
+
+
+    modalPrice.textContent =
+        `₹${currentProduct.price.toLocaleString("en-IN")}`;
+
+
+    modalDescription.textContent =
+        currentProduct.description;
+
+
+    modalId.textContent =
+        currentProduct.id;
+
+
+    createThumbnails();
+
+    updateMainImage();
+
+
+    modalWhatsApp.onclick =
+        () => orderProduct(currentProduct);
+
+
+    productModal.classList.add("show");
+
+
+    document.body.style.overflow =
+        "hidden";
+
+}
+
+
+/* =========================================================
+   CREATE THUMBNAILS
+========================================================= */
+
+function createThumbnails() {
+
+    thumbnails.innerHTML = "";
+
+
+    currentProduct.images.forEach(
+        (image, index) => {
+
+            const thumbnail =
+                document.createElement("button");
+
+            thumbnail.className =
+                "thumbnail";
+
+
+            if (index === currentImageIndex) {
+
+                thumbnail.classList.add("active");
+
+            }
+
+
+            thumbnail.innerHTML = `
+
+                <img
+                    src="${image}"
+                    alt="${currentProduct.imageLabels[index]}"
+                >
+
+            `;
+
+
+            thumbnail.onclick = () => {
+
+                currentImageIndex = index;
+
+                updateMainImage();
+
+            };
+
+
+            thumbnails.appendChild(thumbnail);
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   UPDATE MAIN IMAGE
+========================================================= */
+
+function updateMainImage() {
+
+    if (!currentProduct) {
+        return;
+    }
+
+
+    mainImage.src =
+        currentProduct.images[
+            currentImageIndex
+        ];
+
+
+    mainImage.alt =
+        `${currentProduct.name} ${
+            currentProduct.imageLabels[
+                currentImageIndex
+            ]
+        }`;
+
+
+    document
+        .querySelectorAll(".thumbnail")
+        .forEach((thumbnail, index) => {
+
+            thumbnail.classList.toggle(
+                "active",
+                index === currentImageIndex
+            );
+
+        });
+
+
+    resetZoom();
+
+}
+
+
+/* =========================================================
+   PREVIOUS IMAGE
+========================================================= */
+
+function previousImage(event) {
+
+    if (event) {
+        event.stopPropagation();
+    }
+
+
+    if (!currentProduct) {
+        return;
+    }
+
+
+    currentImageIndex =
+        (
+            currentImageIndex
+            - 1
+            + currentProduct.images.length
+        )
+        %
+        currentProduct.images.length;
+
+
+    updateMainImage();
+
+}
+
+
+/* =========================================================
+   NEXT IMAGE
+========================================================= */
+
+function nextImage(event) {
+
+    if (event) {
+        event.stopPropagation();
+    }
+
+
+    if (!currentProduct) {
+        return;
+    }
+
+
+    currentImageIndex =
+        (
+            currentImageIndex
+            + 1
+        )
+        %
+        currentProduct.images.length;
+
+
+    updateMainImage();
+
+}
+
+
+/* =========================================================
+   CLOSE PRODUCT
+========================================================= */
+
+function closeProduct() {
+
+    productModal.classList.remove("show");
+
+    document.body.style.overflow = "";
+
+    resetZoom();
+
+}
+
+
+/* =========================================================
+   DESKTOP HOVER ZOOM
+========================================================= */
+
+let zoomActive = false;
+
+
+mainImageContainer.addEventListener(
+    "mousemove",
+    event => {
+
+        if (
+            window.innerWidth <= 650
+        ) {
+            return;
+        }
+
+
+        if (!mainImage.complete) {
+            return;
+        }
+
+
+        const rect =
+            mainImageContainer.getBoundingClientRect();
+
+
+        const x =
+            (
+                event.clientX
+                - rect.left
+            )
+            /
+            rect.width
+            * 100;
+
+
+        const y =
+            (
+                event.clientY
+                - rect.top
+            )
+            /
+            rect.height
+            * 100;
+
+
+        mainImage.style.transform =
+            "scale(2)";
+
+
+        mainImage.style.transformOrigin =
+            `${x}% ${y}%`;
+
+
+        zoomActive = true;
+
+    }
+);
+
+
+mainImageContainer.addEventListener(
+    "mouseleave",
+    resetZoom
+);
+
+
+function resetZoom() {
+
+    mainImage.style.transform =
+        "scale(1)";
+
+    mainImage.style.transformOrigin =
+        "center center";
+
+    zoomActive = false;
+
+}
+
+
+/* =========================================================
+   MOBILE PINCH ZOOM
+========================================================= */
+
+let initialDistance = 0;
+
+let mobileScale = 1;
+
+
+mainImageContainer.addEventListener(
+    "touchstart",
+    event => {
+
+        if (
+            event.touches.length === 2
+        ) {
+
+            initialDistance =
+                getTouchDistance(
+                    event.touches[0],
+                    event.touches[1]
+                );
+
+        }
+
+    },
+    {
+        passive: true
+    }
+);
+
+
+mainImageContainer.addEventListener(
+    "touchmove",
+    event => {
+
+        if (
+            event.touches.length !== 2
+        ) {
+            return;
+        }
+
+
+        event.preventDefault();
+
+
+        const currentDistance =
+            getTouchDistance(
+                event.touches[0],
+                event.touches[1]
+            );
+
+
+        if (!initialDistance) {
+            return;
+        }
+
+
+        const ratio =
+            currentDistance
+            /
+            initialDistance;
+
+
+        mobileScale =
+            Math.min(
+                Math.max(ratio, 1),
+                3
+            );
+
+
+        mainImage.style.transform =
+            `scale(${mobileScale})`;
+
+    },
+    {
+        passive: false
+    }
+);
+
+
+mainImageContainer.addEventListener(
+    "touchend",
+    event => {
+
+        if (
+            event.touches.length < 2
+        ) {
+
+            initialDistance = 0;
+
+        }
+
+    }
+);
+
+
+function getTouchDistance(touch1, touch2) {
+
+    const dx =
+        touch1.clientX
+        - touch2.clientX;
+
+
+    const dy =
+        touch1.clientY
+        - touch2.clientY;
+
+
+    return Math.sqrt(
+        dx * dx
+        +
+        dy * dy
+    );
+
+}
+
+
+/* =========================================================
+   FULLSCREEN VIEWER
+========================================================= */
+
+mainImageContainer.addEventListener(
+    "click",
+    event => {
+
+        if (
+            event.target.closest(".gallery-arrow")
+        ) {
+            return;
+        }
+
+
+        if (!currentProduct) {
+            return;
+        }
+
+
+        openFullscreen();
+
+    }
+);
+
+
+function openFullscreen() {
+
+    fullscreenImage.src =
+        currentProduct.images[
+            currentImageIndex
+        ];
+
+
+    fullscreenImage.alt =
+        currentProduct.name;
+
+
+    imageCounter.textContent =
+        `${currentImageIndex + 1} / ${
+            currentProduct.images.length
+        }`;
+
+
+    fullscreenViewer.classList.add("show");
+
+}
+
+
+function closeFullscreen() {
+
+    fullscreenViewer.classList.remove("show");
+
+}
+
+
+function fullscreenPrevious() {
+
+    if (!currentProduct) {
+        return;
+    }
+
+
+    currentImageIndex =
+        (
+            currentImageIndex
+            - 1
+            + currentProduct.images.length
+        )
+        %
+        currentProduct.images.length;
+
+
+    fullscreenImage.src =
+        currentProduct.images[
+            currentImageIndex
+        ];
+
+
+    imageCounter.textContent =
+        `${currentImageIndex + 1} / ${
+            currentProduct.images.length
+        }`;
+
+
+    updateMainImage();
+
+}
+
+
+function fullscreenNext() {
+
+    if (!currentProduct) {
+        return;
+    }
+
+
+    currentImageIndex =
+        (
+            currentImageIndex
+            + 1
+        )
+        %
+        currentProduct.images.length;
+
+
+    fullscreenImage.src =
+        currentProduct.images[
+            currentImageIndex
+        ];
+
+
+    imageCounter.textContent =
+        `${currentImageIndex + 1} / ${
+            currentProduct.images.length
+        }`;
+
+
+    updateMainImage();
+
+}
+
+
+/* =========================================================
+   WHATSAPP ORDER
+========================================================= */
+
+function orderProduct(product) {
+
+    const message =
+
+`Hello, I am interested in this blouse design.
+
+Design ID: ${product.id}
+Design: ${product.name}
+Category: ${product.category}
+Price: ₹${product.price.toLocaleString("en-IN")}
+
+I would like to know more about availability, measurements and stitching/customization.`;
+
+
+
+    const whatsappURL =
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${
+            encodeURIComponent(message)
+        }`;
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+/* =========================================================
+   GENERAL WHATSAPP
+========================================================= */
+
+function openWhatsApp() {
+
+    const message =
+        `Hello, I would like to know more about your blouse designs and stitching services.`;
+
+    const whatsappURL =
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${
+            encodeURIComponent(message)
+        }`;
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+/* =========================================================
+   KEYBOARD CONTROLS
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            if (
+                fullscreenViewer.classList.contains(
+                    "show"
+                )
+            ) {
+
+                closeFullscreen();
+
+            } else {
+
+                closeProduct();
+
+            }
+
+        }
+
+
+        if (
+            event.key === "ArrowLeft"
+            &&
+            productModal.classList.contains(
+                "show"
+            )
+        ) {
+
+            previousImage();
+
+        }
+
+
+        if (
+            event.key === "ArrowRight"
+            &&
+            productModal.classList.contains(
+                "show"
+            )
+        ) {
+
+            nextImage();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   MOBILE SWIPE
+========================================================= */
+
+let touchStartX = 0;
+
+let touchEndX = 0;
+
+
+mainImageContainer.addEventListener(
+    "touchstart",
+    event => {
+
+        if (
+            event.touches.length === 1
+        ) {
+
+            touchStartX =
+                event.touches[0].clientX;
+
+        }
+
+    },
+    {
+        passive: true
+    }
+);
+
+
+mainImageContainer.addEventListener(
+    "touchend",
+    event => {
+
+        if (
+            event.changedTouches.length !== 1
+        ) {
+            return;
+        }
+
+
+        touchEndX =
+            event.changedTouches[0].clientX;
+
+
+        const difference =
+            touchStartX
+            - touchEndX;
+
+
+        if (
+            Math.abs(difference) < 60
+        ) {
+            return;
+        }
+
+
+        if (
+            difference > 0
+        ) {
+
+            nextImage();
+
+        } else {
+
+            previousImage();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menuBtn =
+    document.getElementById("menuBtn");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuBtn.addEventListener(
+    "click",
+    () => {
+
+        navLinks.classList.toggle(
+            "show"
+        );
+
+    }
+);
+
+
+navLinks
+    .querySelectorAll("a")
+    .forEach(link => {
+
+        link.addEventListener(
+            "click",
+            () => {
+
+                navLinks.classList.remove(
+                    "show"
+                );
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   CLOSE MODAL BY CLICKING BACKGROUND
+========================================================= */
+
+productModal.addEventListener(
+    "click",
+    event => {
+
+        if (
+            event.target === productModal
+        ) {
+
+            closeProduct();
+
+        }
+
+    }
+);
+
+
+fullscreenViewer.addEventListener(
+    "click",
+    event => {
+
+        if (
+            event.target === fullscreenViewer
+        ) {
+
+            closeFullscreen();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+document.getElementById("year")
+    .textContent =
+    new Date().getFullYear();
+
+
+displayProducts(products);
+
+</script>
+
+</body>
+</html>
